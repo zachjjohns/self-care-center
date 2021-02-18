@@ -6,3 +6,70 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(#134d71, #78a7c6, #f7e4bf)
+}
+
+head {
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Quicksand';
+    text-align: center;
+    color: #ffffff;
+}
+
+.type-of-message {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    width: 35%;
+    height: 12%;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.input {
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.receive-message {
+    height: 25px;
+    width: 170px;
+    background: #134d71;
+    border: none;
+    border-radius: 5px;
+    font-family: "Quicksand";
+    color: white;
+}
+
+.message-output {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 5px;
+    border: ;
+}
+
+img {
+    margin: auto;
+    display: block;
+    height: 50%;
+    width: 50%;
+}
