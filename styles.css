@@ -7,6 +7,7 @@ white - #ffffff;
 black - #000000;
 */
 html {
+    font-family: 'Quicksand';
     height: 100%
 }
 
@@ -22,8 +23,12 @@ head {
 
 }
 
+.hidden {
+  display: none!important;
+}
+
 h1, h2, h3, h4 {
-    font-family: 'Quicksand';
+    
     text-align: center;
     color: #ffffff;
 }
@@ -33,21 +38,31 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 35%;
-    height: 12%;
-    font-family: sans-serif;
+    height: 15%;
     font-style: italic;
+    font-weight: light;
+    font-size: 1.2em;
 }
 
 .radio-container {
+    display: flex;
+    margin-top: 1em;
     width: 100%;
-    justify-content: stretch;
-    /* border: 1px solid blue; */
 }
 
 
+#affirmation {
+    margin-right: 15px;
+}
+
+#mantra {
+    margin-right: 15px;
+    margin-left: 100px;
+}
 
 .receive-message {
     height: 30%;
@@ -66,9 +81,15 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 60%;
     height: 20%;
+}
+
+.generated-msg {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 200;
 }
 
 img {
