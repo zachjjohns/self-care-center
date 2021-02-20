@@ -29,47 +29,49 @@ h1, h2, h3, h4 {
 }
 
 .type-of-message {
-    display: block;
     margin: auto;
-    justify-content: center;
-    width: 35%;
-    height: 12%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #ffffff;
     border-radius: 5px;
-}
-
-.input {
+    width: 35%;
+    height: 12%;
     font-family: sans-serif;
     font-style: italic;
 }
 
+.radio-container {
+    width: 100%;
+    justify-content: stretch;
+    /* border: 1px solid blue; */
+}
+
+
+
 .receive-message {
-    height: 25px;
-    width: 170px;
+    height: 30%;
+    width: 50%;
     background: #134d71;
-    border: none;
+    margin: auto;
     border-radius: 5px;
     font-family: "Quicksand";
     color: white;
+    
 }
 
 .message-output {
     display: flex;
     margin: auto;
     justify-content: center;
-    width: 60%;
-    height: 20%;
-    text-align: center;
     align-items: center;
     background: #ffffff;
     border-radius: 5px;
-    border: ;
+    width: 60%;
+    height: 20%;
 }
 
 img {
-    margin: auto;
-    display: block;
     height: 50%;
     width: 50%;
 }
