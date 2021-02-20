@@ -47,17 +47,20 @@ var mantraList = [
 ]
 
 function makeMessage() {
+    meditate.classList.add("hidden");
+    generatedMsg.classList.remove("hidden");
+    if (!affirmation.checked && !mantra.checked)
+        generatedMsg.innerText = "Message type not selected - please choose"
     if (affirmation.checked==true) {
         var randomAffirmation = affirmationList[getRandomIndex(affirmationList)];
         generatedMsg.innerText = randomAffirmation;
-        meditate.classList.toggle("hidden");
-        generatedMsg.classList.toggle("hidden");
+        
     }
     else if (mantra.checked==true) {
         var randomMantra = mantraList[getRandomIndex(mantraList)];
         generatedMsg.innerText = randomMantra;
-        meditate.classList.toggle("hidden");
-        generatedMsg.classList.toggle("hidden");
+        // meditate.classList.toggle("hidden");
+        // generatedMsg.classList.toggle("hidden");
     }
 }
 
