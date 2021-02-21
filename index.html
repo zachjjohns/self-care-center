@@ -6,25 +6,43 @@
     <title>Self Care Center</title>
   </head>
   <body>
-    <h1>✨ Self Care Center ✨</h1>
-    <br></br>
-    <h2>Which type of message?</h2>
-    <div class="type-of-message">
+    <section class="login-page">
+      <h1>✨ Self Care Center ✨</h1>
+      <br>
       <form>
-      <div class="radio-container">
-        <input id="affirmation" type="radio" name="msgtype" value="affirmation">affirmation</input>
-        <input id="mantra" type="radio" name="msgtype" value ="mantra">mantra</input>
-      </div>
+        <h2>Welcome! Please enter your name to get started:</h2>
+        <br>
+        <div class="name-container">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name-input" style="text-align:center;" placeholder="Your name here">
+          <button class="selfcare-time">Click Me for Self Care!</button>
+        </div>
       </form>
-      <button class="receive-message">Receive Message</button>
-    </div>
-    <br>
-    <br>
-    <br>
-    <section class ="message-output">
-      <img id="meditate" src="assets/meditate.svg" alt="Logo with somebody meditating"/>
-      <h2 class="generated-msg hidden">Placeholder</h2>
     </section>
+    <section class="main-page hidden">
+      <h1>✨ Self Care Center ✨</h1>
+      <br>
+      <h2 class ="welcome-name"></h2>
+      <br>
+      <h2>Which type of message?</h2>
+      <div class="type-of-message">
+        <form>
+          <div class="radio-container">
+            <input id="affirmation" type="radio" name="msgtype" value="affirmation">affirmation</input>
+            <input id="mantra" type="radio" name="msgtype" value ="mantra">mantra</input>
+          </div>
+        </form>
+        <button class="receive-message">Receive Message</button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>    
+      <div class ="message-output">
+        <img id="meditate" src="assets/meditate.svg" alt="Logo with somebody meditating"/>
+        <h2 class="generated-msg hidden">Placeholder</h2>
+      </div>
     <script type="text/javascript" src="main.js"></script>
+    </section>
   </body>
 </html>
