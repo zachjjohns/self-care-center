@@ -1,12 +1,20 @@
 var affirmation = document.querySelector("#affirmation");
 var mantra = document.querySelector("#mantra");
-// var buttonSelected = document.querySelectorAll("input[name="msgtype"]");
 var generatedMsg = document.querySelector(".generated-msg");
 var meditate = document.querySelector("#meditate");
-
+var selfcareButton = document.querySelector(".selfcare-time");
 var receiveMessage = document.querySelector(".receive-message");
+var loginPage = document.querySelector(".login-page");
+var mainPage = document.querySelector(".main-page");
+var submittedName = document.querySelector("#name-input");
+var welcomeName = document.querySelector(".welcome-name");
+var messageOutput = document.querySelector(".message-output");
 
+// selfcareButton.addEventListener("click", changeToMain);
 receiveMessage.addEventListener("click", makeMessage);
+
+
+var currentName = "";
 
 var affirmationList = [
     "I forgive myself and set myself free.",
@@ -46,6 +54,14 @@ var mantraList = [
     "Large quantities of currency correlates to larger quantities of troubles.",
 ]
 
+function changeToMain() {
+    loginPage.classList.add("hidden");
+    mainPage.classList.remove("hidden");
+
+}
+
+
+
 function makeMessage() {
     meditate.classList.add("hidden");
     generatedMsg.classList.remove("hidden");
@@ -68,3 +84,17 @@ function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
+selfcareButton.addEventListener("click", function (e) {
+    e.preventDefault(); 
+    currentName = submittedName.value;
+    welcomeName.innerText = 
+    `Namaste, ☮️${currentName}💓
+    Take 3 deep breaths and enjoy.`;
+    changeToMain();
+    // currentPoster = new Poster(imageURL.value, newTitle.value, newQuote.value);
+    // images.unshift(currentPoster.imageURL);
+    // titles.unshift(currentPoster.title);
+    // quotes.unshift(currentPoster.quote);
+    // showMain();
+    // displayCurrentPoster();
+});
