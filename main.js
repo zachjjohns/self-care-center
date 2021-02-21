@@ -10,12 +10,7 @@ var submittedName = document.querySelector("#name-input");
 var welcomeName = document.querySelector(".welcome-name");
 var messageOutput = document.querySelector(".message-output");
 
-// selfcareButton.addEventListener("click", changeToMain);
-receiveMessage.addEventListener("click", makeMessage);
-
-
 var currentName = "";
-
 var affirmationList = [
     "I forgive myself and set myself free.",
     "I believe I can be all that I want to be.",
@@ -31,9 +26,7 @@ var affirmationList = [
     "I honor my body by trusting the signals that it sends me.",
     "I manifest perfect health by making smart choices.",
     "I be doin' the thing. Big time."
-]
-
-
+];
 var mantraList = [
     "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
     "Don’t let yesterday take up too much of today.",
@@ -52,15 +45,12 @@ var mantraList = [
     "Like Limp Bizkit said: Keep on rollin', baby.",
     "Don't fake the funk on a nasty dunk.",
     "Large quantities of currency correlates to larger quantities of troubles.",
-]
+];
 
 function changeToMain() {
     loginPage.classList.add("hidden");
     mainPage.classList.remove("hidden");
-
 }
-
-
 
 function makeMessage() {
     meditate.classList.add("hidden");
@@ -70,19 +60,18 @@ function makeMessage() {
     if (affirmation.checked==true) {
         var randomAffirmation = affirmationList[getRandomIndex(affirmationList)];
         generatedMsg.innerText = randomAffirmation;
-        
     }
     else if (mantra.checked==true) {
         var randomMantra = mantraList[getRandomIndex(mantraList)];
         generatedMsg.innerText = randomMantra;
-        // meditate.classList.toggle("hidden");
-        // generatedMsg.classList.toggle("hidden");
     }
 }
 
 function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
+
+receiveMessage.addEventListener("click", makeMessage);
 
 selfcareButton.addEventListener("click", function (e) {
     e.preventDefault(); 
@@ -91,10 +80,4 @@ selfcareButton.addEventListener("click", function (e) {
     `Namaste, ☮️${currentName}💓
     Take 3 deep breaths and enjoy.`;
     changeToMain();
-    // currentPoster = new Poster(imageURL.value, newTitle.value, newQuote.value);
-    // images.unshift(currentPoster.imageURL);
-    // titles.unshift(currentPoster.title);
-    // quotes.unshift(currentPoster.quote);
-    // showMain();
-    // displayCurrentPoster();
 });

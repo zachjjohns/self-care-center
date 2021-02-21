@@ -1,18 +1,9 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000;
-*/
 html {
     font-family: 'Quicksand';
     height: 100%;
 }
 
 body {
-    /* height: 100%; */
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,7 +11,7 @@ body {
 }
 
 .hidden {
-  display: none!important;
+    display: none!important;
 }
 
 h1, h2, h3, h4 {
@@ -62,15 +53,15 @@ h1, h2, h3, h4 {
     padding: 12px 12px;
     margin: 10px 5px;
     box-sizing: border-box;
+    border: 5px solid #134d71;
+    border-radius: 15px;
 }
-
 
 .radio-container {
     display: flex;
     margin-top: 0.5em;
     width: 100%;
 }
-
 
 #affirmation {
     margin-right: 15px;
@@ -89,7 +80,6 @@ h1, h2, h3, h4 {
     height: 1.8em;
     width: 11em;
     background: #134d71;
-    /* margin-bottom: 1em; */
     border-radius: 5px;
     font-family: "Quicksand";
     font-size: 16px;
@@ -101,7 +91,6 @@ h1, h2, h3, h4 {
     height: 3em;
     width: 8em;
     background: #134d71;
-    /* margin: auto; */
     border-radius: 5px;
     font-family: "Quicksand";
     color: white;
